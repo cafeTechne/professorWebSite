@@ -80,11 +80,68 @@
 
               <div class="panel-body contentBody">
 
-                ◦ “Trauma and Compassionate Blame.” (forthcoming)
-                <span class="journalName">Ergo</span>
+                
+                <div id="article4" > <span class="small glyphicon glyphicon-plus" aria-hidden="true"></span>
+                  ◦ 2022. “Community Repair of Moral Damage from Domestic Violence.” 
+                  </div>
+                  <span class="journalName">Social Philosophy Today</span>.  Online First Articles: https://doi.org/10.5840/socphiltoday202271293
+  
+                  <a href="/articles/LaGuardia-LoBianco_Community Repair of Moral Damage from Domestic Violence.pdf"
+                    download><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+                  <abstract style="display: none;" id="article4abstract">
+                    I argue that communities have a moral responsibility
+to repair and prevent moral damage that some survivors of domestic violence
+may experience. This responsibility is grounded in those communities' complicity
+in domestic violence and the moral damage that may result. Drawing on Claudia
+Card's work on domestic violence, I first explain two forms of moral damage that
+some survivors may experience. These are: 1) normative isolation, or abusive
+environments that are marked by distorted moral standards about the abuse
+itself, and 2) coerced self-betrayal, the coercive entrapment of the survivor's
+
+agency, emotions, and beliefs to express the will of the abuser. Though the
+abuser is always the primary cause of abuse, I argue that survivors' communities
+can contribute to a climate that facilitates domestic violence by, for instance,
+sustaining harmful norms about gender roles, shaming survivors, protecting
+abusers, and not wanting to interrupt “private matters.” When this complicity
+exists, I argue that communities have a moral responsibility to create structures
+that repair and prevent moral damage from domestic violence. Finally, I sketch
+out some practical considerations for building these structures. These involve
+creating violence-resistant communities that protect survivors, hold abusers
+accountable, and help survivors reclaim their agencies.
+                  </abstract>
+  
+                  <br class="pageBreak">
+                  <br class="pageBreak">
+  
+
+                <div id="article0" > <span class="small glyphicon glyphicon-plus" aria-hidden="true"></span>
+                ◦ 2021, “Trauma and Compassionate Blame.”
+                </div>
+                <span class="journalName">Ergo an Open Access Journal of Philosophy 7</span>. doi: https://doi.org/10.3998/ergo.1116 
+
+                <a href="/articles/ergo-1116-laguardia-lobianco.pdf"
+                  download><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+                <abstract style="display: none;" id="article0abstract">
+                  A common question in moral philosophy concerns
+                  how we should regard traumatic histories that have influenced wrongdoing. In
+                  this paper, I argue that one standard line of response—survivors are exempt
+                  from blame for a given wrongdoing because of a traumatic history that
+                  influenced this wrongdoing—is problematic. Instead of trying to determine how
+                  trauma categorically exempts survivors from blame, I argue that we should start
+                  from the fact that survivors are members of the moral community who can be as
+                  blameworthy as anyone, and then ask how considerations of trauma might
+                  impact a moral response to their wrongdoing. I consider and reject three
+                  attempts to exempt survivors on the grounds of traumatic histories, arguing that
+                  each risks divesting survivors of moral agency. I then develop an account
+                  of compassionate blame, a unique attitude in which we can blame the survivor
+                  for their wrong while also taking compassion towards the survivor in light of
+                  their traumatic history, and argue that this is the appropriate moral attitude to
+                  cultivate in these cases.
+                </abstract>
 
                 <br class="pageBreak">
                 <br class="pageBreak">
+
                 <div id="article1" ><span class="small glyphicon glyphicon-plus" aria-hidden="true"></span>
                   ◦ 2019. "Understanding Self-Injury through Body Shame and Internalized Oppression."
                 </div>
@@ -125,13 +182,10 @@
               </div>
 
               <div class="panel panel-default">
-                <div class="panel panel-heading-custom1 topicHeading">Encyclopedia Entries</div>
+                <div class="panel panel-heading-custom1 topicHeading">Blog Posts</div>
 
                 <div class="panel-body contentBody">
-                  ◦ 2020. “Moral Luck.” In: Sellers M., Kirste S. (eds). <span class="journalName">Encyclopedia of the
-                    Philosophy of Law and Social Philosophy. </span> <span style="font-size: .825em">Springer,
-                    Dordrecht</span>
-
+                  ◦ 2022. “Reframing Abortion Lessons.” <span class="journalName">Blog of the APA: Women in Philosophy. </span> <span style="font-size: .825em">https://blog.apaonline.org/2022/05/18/reframing-abortion-lessons/</span>
                 </div>
 
 
@@ -143,18 +197,18 @@
               <div class="panel panel-default">
                 <div class="panel panel-heading-custom2 topicHeading">Articles Under Review</div>
                 <div class="panel-body contentBody">
-                  ◦ “We Don't Do That Here: Intimate Partner Violence, Moral Damage, and Community Responsibility”
+                  ◦ "Reframing Abortion Lessons"
                 </div>
                 <div class="panel-body contentBody">
-                  ◦ "Challenging the Stigma of Self-Injury"
+                  ◦ "The Axiology of Pain and Pleasure" (with Paul Bloomfield)
                 </div>
               </div>
 
 
               <div class="panel panel-default">
                 <div class="panel panel-heading-custom3 topicHeading">Works in Progress</div>
-                <div class="panel-body contentBody">◦ “Narrative Identity, Psychopathology, and Bad Faith”</div>
-                <div class="panel-body contentBody">◦ “Sexist Harms of the American Wedding Industry”</div>
+                <div class="panel-body contentBody">◦ "Reparative Resistance, Moral Damage, and Oppression."</div>
+                <div class="panel-body contentBody">◦ “Narrative Identity, Authenticity, and Psychopathology”</div>
               </div>
             </div>
           </div>
@@ -185,6 +239,19 @@
     //method courtesy of :
     //https://stackoverflow.com/questions/2432003/combine-hover-and-click-functions-jquery
 
+
+
+    var article0Click = function () {
+      //$("#article1abstract").show();
+      var x = document.getElementById("article0abstract");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+
+    }
+
     var article1Click = function () {
       //$("#article1abstract").show();
       var x = document.getElementById("article1abstract");
@@ -211,12 +278,26 @@
         x.style.display = "none";
       }
     }
+
+    var article4Click = function () {
+      var x = document.getElementById("article4abstract");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    //article 0:
+    $('#article0').click(article0Click);
     //article 1:
     $('#article1').click(article1Click);
     //article 2:
     $('#article2').click(article2Click);
     //article 3:
     $('#article3').click(article3Click);
+    //article 4:
+    $('#article4').click(article4Click);
 
     /*
 
